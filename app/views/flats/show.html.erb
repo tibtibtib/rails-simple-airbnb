@@ -1,0 +1,35 @@
+<div class="banner">
+  <%= image_tag @flat.image_url, alt: "alttext" %>
+</div>
+  <div class="row">
+    <div class="col-8">
+      <div class="bg-light mb-2 rounded p-2 rounded">
+        <h2><%= @flat.name %></h2>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="bg-light m-2 rounded">
+        <h3>A bit more about this flat...</h3>
+        <p><%= @flat.details %></p>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="bg-light m-2 rounded">
+        <h4>Book this place!</h4>
+        <form action="#">
+          <input type="date">
+          <input type="date">
+          <input type="submit" value="Book">
+        </form>
+      </div>
+      <div class="bg-light m-2 rounded" >
+        <h4>Details</h4>
+        <p><%= @flat.number_of_guests %></p>
+        <p><%= @flat.price_per_night %></p>
+      </div>
+      <div class="bg-light m-2 rounded" >
+        <p>Share</p>
+      </div>
+    </div>
+  </div>
